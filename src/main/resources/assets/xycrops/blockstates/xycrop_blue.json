@@ -1,0 +1,15 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "cross"
+  },
+  "variants": {
+    "age1": {
+      "0": { "textures": { "cross": "xycrops:a0" }},
+      "1": { "textures": { "cross": "xycrops:a1" }},
+      "2": { "textures": { "cross": "xycrops:a2" }},
+      "3": { "textures": { "cross": "xycrops:a3" }},
+      "4": { "textures": { "cross": "xycrops:a4_blue" }}
+    }
+  }
+}
