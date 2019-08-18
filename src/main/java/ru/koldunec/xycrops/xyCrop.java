@@ -72,6 +72,10 @@ abstract class xyCrop extends BlockCrops {
     @Override
     public void getDrops(NonNullList<ItemStack> drops, IBlockAccess world, BlockPos pos, IBlockState state, int fortune) {
         //super.getDrops(drops, world, pos, state, fortune);
+        if(getAge(state)!=4){
+            drops.add(getCrystal());
+            return;
+        }
         ItemStack a = getCrystal();
         a.setCount(xycrops.random.nextInt(2)+3);
         drops.add(a);
